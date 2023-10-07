@@ -19,7 +19,7 @@ while not check:
                                          C     C      W  W  W      D      D 
                                           CCCCC        WW WW       DDDDDDD  
 
-                                        --Check--------Working-----Directory----
+                                        --Check--------Working-----Directory--
 
     """
 
