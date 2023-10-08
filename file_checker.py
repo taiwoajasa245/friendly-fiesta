@@ -32,7 +32,7 @@ while not check:
     # Call the function to print the CWD design
     print_cwd_design()
 
-    user_input = input(str("Please write 'check' to list files in your curent working directory: "))
+    user_input = input(str("Please write 'check' to list files in your curent working directory: ")).replace(" ", "")
 
     if user_input == "check":
         def check_directory():
@@ -54,17 +54,16 @@ while not check:
                 mtime_datetime = datetime.datetime.fromtimestamp(mtime)
                 mtime_datetime = datetime.datetime.fromtimestamp(mtime)
                 formatted_time = mtime_datetime.strftime("%H:%M:%S")
-                print(f" {item}: | {formatted_time} | {file_size} bytes ")
+                print(f" {item}: | {formatted_time} | {file_size}bytes")
 
 
         check_directory()
-    elif user_input.strip().isdigit():
+    elif user_input.strip().isdigit(): 
         print('please do not input a number')
-
     else:
-        print('please enter check if you want it to work')
+        print('please enter "check" if you want it to work')
 
-    user2_input = input('Would you like to continue (yes/no): ')
+    user2_input = input('Would you like to continue (yes/no): ').replace(" ", "")
 
     if user2_input == "no":
         break
