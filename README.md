@@ -15,11 +15,11 @@ A simple Python script that checks the files in the user's current working direc
 
  
 Current Working Directory: /path/to/your/directory
----------------------------------------------
-File Name         Size (bytes)       Created On
+----------------------------------------------------
+File Name         Created On          time millisecond
 -----------------------------------------------------
-file1.txt         1024               2023-01-15
-file2.png         2048               2023-01-14
+file1.txt         2023-01-15          00:23:54.615998    
+file2.png         2023-01-14          15:18:21.894688    
 subdir/
-script.py         512                2023-01-16
+script.py         2023-01-16          10:05:36.862845
 
