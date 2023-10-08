@@ -1,4 +1,5 @@
 import os 
+import datetime
 
 
 check = False
@@ -35,9 +36,22 @@ while not check:
 
     if user_input == "check":
         def check_directory():
-            current_dir = os.getcwd()
-            for entry in os.listdir(current_dir):
-                print(entry)
+
+            # Get the current working directory
+
+            cwd = os.getcwd()
+
+            # List the files and folders in the current directory
+
+            files_and_folders = os.listdir(cwd)
+
+            # Iterate through the list and check the date and time information
+
+            for item in files_and_folders:
+                item_path = os.path.join(cwd, item)
+                mtime = os.path.getmtime(item_path)
+                mtime_datetime = datetime.datetime.fromtimestamp(mtime)
+                print(f"{item}: | {mtime_datetime}")
 
 
         check_directory()
@@ -51,4 +65,4 @@ while not check:
 
     if user2_input == "no":
         break
-    print('Thank you'); 
+print('Thank you'); 

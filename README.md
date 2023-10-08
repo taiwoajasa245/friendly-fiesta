@@ -13,28 +13,13 @@ A simple Python script that checks the files in the user's current working direc
    ```shell
    python file_checker.py
 
-
-
-Current Working Directory: /path/to/your/directory
----------------
-File Name    
----------------
-file1.txt    
-file2.png    
-subdir/
-script.py
-
-
-
-<!--
-coming soon 
+ 
 Current Working Directory: /path/to/your/directory
 ---------------------------------------------
 File Name         Size (bytes)       Created On
----------------------------------------------
+-----------------------------------------------------
 file1.txt         1024               2023-01-15
 file2.png         2048               2023-01-14
 subdir/
 script.py         512                2023-01-16
 
- -->
