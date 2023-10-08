@@ -49,9 +49,12 @@ while not check:
 
             for item in files_and_folders:
                 item_path = os.path.join(cwd, item)
+                file_size = os.path.getsize(item_path)
                 mtime = os.path.getmtime(item_path)
                 mtime_datetime = datetime.datetime.fromtimestamp(mtime)
-                print(f"{item}: | {mtime_datetime}")
+                mtime_datetime = datetime.datetime.fromtimestamp(mtime)
+                formatted_time = mtime_datetime.strftime("%H:%M:%S")
+                print(f" {item}: | {formatted_time} | {file_size} bytes ")
 
 
         check_directory()
