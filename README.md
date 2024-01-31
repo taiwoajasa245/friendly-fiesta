@@ -12,7 +12,6 @@ A simple Python script that checks the files in the user's current working direc
 
    ```shell
    python file_checker.py
-
  
 Current Working Directory: /path/to/your/directory
 ----------------------------------------------------
